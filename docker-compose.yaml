@@ -1,0 +1,25 @@
+version: '2'
+
+services: 
+  api:
+    build: api/
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+      
+  web:
+    build: web/
+    ports:
+      - "80:80"
+      - "8001:80"
+    depends_on:
+      - api
+  db:
+    image: postgres
+    restart: always
+    volumes: 
+      - contacts-db:/var/lib/postgresql/data
+
+volumes:
+  contacts-db:

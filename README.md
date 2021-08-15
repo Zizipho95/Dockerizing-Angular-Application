@@ -1,27 +1,9 @@
-@ZIZIPHO 
-# Dockerizing-Angular-Application
-Dockerizing Angular Application 
-Deploy-Docker-Container-on-AWS on Ubuntu Server 
+# `LayZeeDK/docker-angular`
 
-sudo apt-get update
+Docker containers for developing, testing, building and deploying Angular apps.
 
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
-    
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+You need to install a container runtime. [Get one from Docker.com](https://www.docker.com/get-started).
 
-apt-cache madison docker-ce
+Run NPM scripts located in `package.json`, for example `npm run docker:test` or `yarn docker:test`.
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io
-sudo apt install docker.io
-sudo apt install docker-compose
-
-
-    
-    
-
+To build and run a production web server using Nginx, run the `docker:build` NPM script followed by `docker:deploy`.
