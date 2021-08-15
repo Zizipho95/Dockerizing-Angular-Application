@@ -1,4 +1,4 @@
-# `Zizipho/docker-angular`
+# `Zizipho Document/Dockerizing-Angular-Application`
 
 Docker containers for developing, testing, building and deploying Angular apps.
 
