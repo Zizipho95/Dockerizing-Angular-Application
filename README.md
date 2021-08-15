@@ -1,4 +1,4 @@
-# `LayZeeDK/docker-angular`
+# `Zizipho/docker-angular`
 
 Docker containers for developing, testing, building and deploying Angular apps.
 
